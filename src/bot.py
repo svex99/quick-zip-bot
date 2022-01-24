@@ -1,4 +1,3 @@
-from typing import Dict, List, Union
 from functools import partial
 from asyncio import get_running_loop
 from shutil import rmtree
@@ -6,7 +5,7 @@ from pathlib import Path
 import logging
 import os
 
-from dotenv import load_dotenv, main
+from dotenv import load_dotenv
 from telethon import TelegramClient
 from telethon.events import NewMessage, StopPropagation
 from telethon.tl.custom import Message
@@ -21,7 +20,7 @@ BOT_TOKEN = os.environ['BOT_TOKEN']
 CONC_MAX = int(os.environ.get('CONC_MAX', 3))
 STORAGE = Path('./files/')
 
-MessageEvent = Union[NewMessage.Event, Message]
+MessageEvent = NewMessage.Event | Message
 
 logging.basicConfig(
     format='[%(levelname)s/%(asctime)s] %(name)s: %(message)s',
@@ -31,8 +30,8 @@ logging.basicConfig(
     ]
 )
 
-# dict to keep track of users task
-tasks: Dict[int, List[int]] = {}
+# dict to keep track of tasks for every user
+tasks: dict[int, list[int]] = {}
 
 bot = TelegramClient(
     'quick-zip-bot', api_id=API_ID, api_hash=API_HASH
