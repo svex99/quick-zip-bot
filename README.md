@@ -1,6 +1,6 @@
 # quick-zip-bot
 
-![GitHub](https://img.shields.io/github/license/svex99/quick-zip)
+![GitHub](https://img.shields.io/github/license/svex99/quick-zip-bot)
 ![Github](https://img.shields.io/static/v1?label=python&message=3.10.0&color=succes)
 ![Github](https://img.shields.io/static/v1?label=&message=asyncio&color=informational)
 ![Github](https://img.shields.io/static/v1?label=&message=telethon&color=informational)
@@ -69,7 +69,7 @@ $ docker container run -d --name quick-zip-bot --env-file .env quick-zip-bot
 > 500h/month for free, no credit card required
 
 1. Fork this repository to your GitHub account, and give it a star :).
-2. Login or create your [Railway](https://railway.app) account as needed.
+2. Login or create your [Railway](https://railway.app?referralCode=hL5gIG) account as needed.
 3. Create a new project on Railway by choosing `GitHub Repo` option and selecting the repository you forked on step 1.
 4. Click the new project created and go to `Variables` section, where you must set the environment variables.
 5. You are ready to use the bot when deployment is ready, this may take a bit.
