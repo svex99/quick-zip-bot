@@ -10,7 +10,7 @@ from telethon.tl.custom import Message
 async def download_files(
     msgs: list[Message],
     conc_max: int = 3,
-    root: Path = Path('./')
+    root: Path | None = None
 ) -> Iterator[Path]:
     """
     Downloads the file if present for each message.
@@ -23,6 +23,8 @@ async def download_files(
     Returns:
         Yields the path of every file that is downloaded.
     """
+    root = root or Path('./')
+
     next_msg_index = 0
     pending = set()
     while next_msg_index < len(msgs) or pending:
