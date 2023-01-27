@@ -66,10 +66,14 @@ $ docker container run -d --name quick-zip-bot --env-file .env quick-zip-bot
 
 ### Railway
 
-> 500h/month for free, no credit card rqeuired
+> 500h/month for free, no credit card required
 
 1. Fork this repository to your GitHub account, and give it a star :).
 2. Login or create your [Railway](https://railway.app) account as needed.
 3. Create a new project on Railway by choosing `GitHub Repo` option and selecting the repository you forked on step 1.
 4. Click the new project created and go to `Variables` section, where you must set the environment variables.
 5. You are ready to use the bot when deployment is ready, this may take a bit.
+
+## Contribute
+
+I'll be happy to receive any issue or pull request to improve the bot, fell free to contribute.
