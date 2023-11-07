@@ -66,7 +66,7 @@ $ docker container run -d --name quick-zip-bot --env-file .env quick-zip-bot
 
 ### Railway
 
-> 500h/month for free, no credit card required
+> not free anymore
 
 1. Fork this repository to your GitHub account, and give it a star :).
 2. Login or create your [Railway](https://railway.app?referralCode=hL5gIG) account as needed.
